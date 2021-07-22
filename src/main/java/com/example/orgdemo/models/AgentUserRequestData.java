@@ -18,9 +18,9 @@ public class AgentUserRequestData {
      */
     private String phone;
     /**
-     * 可选，是否创建默认的体验关联
+     * 可选，是否创建默认的体验关联,不传默认false
      */
-    private String experience;
+    private boolean experience;
     /**
      * 可选，值为zh_CN 或 en_US
      */
@@ -62,11 +62,11 @@ public class AgentUserRequestData {
         this.phone = phone;
     }
 
-    public String getExperience() {
+    public boolean getExperience() {
         return experience;
     }
 
-    public void setExperience(String experience) {
+    public void setExperience(boolean experience) {
         this.experience = experience;
     }
 
